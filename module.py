@@ -6,7 +6,7 @@ def set_enemy_health():
 
 
 def get_lite_attack():
-    return randint(2, 5)
+    return randint(4, 5)
 
 
 def get_mid_attack():
@@ -38,7 +38,7 @@ def get_user_attack():
             return get_user_attack()
         attack_value = attacks_types[input_attack]()
         print(f'Количество очков твоей атаки: {attack_value}.')
-        total += 1
+        total += attack_value
     return total
 
 
